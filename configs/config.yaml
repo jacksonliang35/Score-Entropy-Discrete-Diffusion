@@ -1,7 +1,6 @@
 defaults:
   - _self_
   - model: small
-  - override hydra/launcher: submitit_local
 
 ngpus: 8
 tokens: 50257
