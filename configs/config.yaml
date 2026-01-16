@@ -1,7 +1,7 @@
 defaults:
   - _self_
   - model: small
-  - override hydra/launcher: submitit_slurm
+  - override hydra/launcher: submitit_local
 
 ngpus: 8
 tokens: 50257
@@ -24,12 +24,12 @@ data:
   cache_dir: data
 
 graph:
-  type: absorb
+  type: uniform
   file: data
   report_all: False
 
 noise:
-  type: loglinear
+  type: geometric
   sigma_min: 1e-4
   sigma_max: 20
 
