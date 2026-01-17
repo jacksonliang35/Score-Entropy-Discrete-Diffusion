@@ -2,7 +2,7 @@ defaults:
   - _self_
   - model: small
 
-ngpus: 8
+ngpus: 1
 tokens: 50257
 
 training:
