@@ -18,10 +18,10 @@ training:
   ema: 0.9999
 
 data:
-  train: openwebtext
+  train: wikitext2
   valid: wikitext103
   cache_dir: data
-  train_subset: 50000
+  # train_subset: 50000
   valid_subset: 5000
 
 graph:
